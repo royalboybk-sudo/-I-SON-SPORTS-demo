@@ -3,53 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I SON SPORTS</title>
+  <title>Client Website</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
-  <!-- TOP BAR -->
-  <header class="topbar">
-    <div class="brand">
-      <img src="images/logo.png" alt="I SON SPORTS Logo">
-      <h1>I SON SPORTS</h1>
-    </div>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">CLIENT LOGO</h1>
 
-    <div class="cart">
-      🛒 <span id="cartCount">0</span>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- SEARCH -->
-  <section class="search-section">
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Search sports equipment..."
-    />
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Professional Websites for Serious Brands</h2>
+      <p>Fast • Modern • Client-Ready</p>
+      <button class="btn">Get Started</button>
+    </div>
   </section>
 
-  <!-- TITLE -->
-  <h2 class="choose-title">CHOOSE YOUR GAME</h2>
-
-  <!-- FILTERS -->
-  <section class="filters">
-    <button onclick="filterProducts('all')">All</button>
-    <button onclick="filterProducts('cricket')">Cricket</button>
-    <button onclick="filterProducts('football')">Football</button>
-    <button onclick="filterProducts('badminton')">Badminton</button>
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        We design and develop clean, modern websites that help businesses grow
+        online with confidence.
+      </p>
+    </div>
   </section>
 
-  <!-- PRODUCTS -->
-  <main id="productList" class="products">
-    <!-- Products JS se aayenge -->
-  </main>
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
 
-  <!-- JS -->
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+      <div class="service-box">
+        <div class="service">Web Design</div>
+        <div class="service">Web Development</div>
+        <div class="service">SEO Optimization</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: contact@client.com</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Client Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
