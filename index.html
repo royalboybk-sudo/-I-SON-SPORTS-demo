@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I SON SPORTS</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="I SON SPORTS Logo">
+      <h1>I SON SPORTS</h1>
+    </div>
+
+    <div class="cart">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <section class="search-section">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search sports equipment..."
+    />
+  </section>
+
+  <!-- TITLE -->
+  <h2 class="choose-title">CHOOSE YOUR GAME</h2>
+
+  <!-- FILTERS -->
+  <section class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('cricket')">Cricket</button>
+    <button onclick="filterProducts('football')">Football</button>
+    <button onclick="filterProducts('badminton')">Badminton</button>
+  </section>
+
+  <!-- PRODUCTS -->
+  <main id="productList" class="products">
+    <!-- Products JS se aayenge -->
+  </main>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
